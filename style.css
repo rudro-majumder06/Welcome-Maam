@@ -1,0 +1,109 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Background */
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("https://i.ibb.co/p6yrpLGF/BACKGROUND.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding: 2rem 1rem;
+  }
+  
+  /* Overlay for readability */
+  .overlay {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+  }
+  
+  /* Welcome section */
+  .welcome h1 {
+    font-size: 2rem;
+    color: #6b2c1b;
+  }
+  .welcome p {
+    margin-top: 0.5rem;
+  }
+  
+  .message {
+    margin: 1.5rem 0;
+  }
+  .bengali {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 1rem;
+  }
+  
+  .scroll-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background: #ffcc80;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .scroll-btn:hover {
+    background: #ffb74d;
+  }
+  
+  /* Gallery */
+  .gallery {
+    flex-direction: column;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .photos img {
+    width: 100%;
+    height: auto;              /* Keep aspect ratio */
+    object-fit: contain;       /* Show full image without cutting */
+    border-radius: 10px;
+    background: #fff;          /* Add white padding if aspect ratio mismatches */
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* Different frames */
+  .frame1 img { border: 5px solid #ff7043; }
+  .frame2 img { border: 8px groove #6a1b9a; }
+  .frame3 img { border: 6px dashed #2e7d32; }
+  .frame4 img { border: 6px dotted #0277bd; }
+  .frame5 img { border: 10px double #f57c00; }
+  .frame6 img { border: 7px solid #d32f2f; }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+  }
+  
